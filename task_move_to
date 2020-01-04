@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ "$#" -lt 1 ]; then
+    echo "$# is Illegal number of parameters."
+    echo "Usage: $0 [options]"
+    exit 1
+fi
+args=("$@")
+ 
+python3 /home/sung/indy7/task_move_to.py $1 $2 $3 $4 $5 $6
